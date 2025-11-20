@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		04A11AD32ECD35E100ECE51C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 04A11AD22ECD35E100ECE51C /* FirebaseDatabase */; };
+		04A11AE12ECD3B4C00ECE51C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 04A11AE02ECD3B4C00ECE51C /* FirebaseAuth */; };
+		04A11AE32ECD3B6400ECE51C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 04A11AE22ECD3B6400ECE51C /* FirebaseFirestore */; };
+		04A11AFA2ECD428500ECE51C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A11AF92ECD428500ECE51C /* GoogleService-Info.plist */; };
+		04A11B462ECD8A2E00ECE51C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 04A11B452ECD8A2E00ECE51C /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		04A11ABB2ECD350E00ECE51C /* RideFuture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideFuture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A11AF92ECD428500ECE51C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +32,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A11B462ECD8A2E00ECE51C /* Kingfisher in Frameworks */,
+				04A11AD32ECD35E100ECE51C /* FirebaseDatabase in Frameworks */,
+				04A11AE32ECD3B6400ECE51C /* FirebaseFirestore in Frameworks */,
+				04A11AE12ECD3B4C00ECE51C /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +45,9 @@
 		04A11AB22ECD350E00ECE51C = {
 			isa = PBXGroup;
 			children = (
+				04A11AF92ECD428500ECE51C /* GoogleService-Info.plist */,
 				04A11ABD2ECD350E00ECE51C /* RideFuture */,
+				04A11ADF2ECD3B4C00ECE51C /* Frameworks */,
 				04A11ABC2ECD350E00ECE51C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +58,13 @@
 				04A11ABB2ECD350E00ECE51C /* RideFuture.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		04A11ADF2ECD3B4C00ECE51C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +87,10 @@
 			);
 			name = RideFuture;
 			packageProductDependencies = (
+				04A11AD22ECD35E100ECE51C /* FirebaseDatabase */,
+				04A11AE02ECD3B4C00ECE51C /* FirebaseAuth */,
+				04A11AE22ECD3B6400ECE51C /* FirebaseFirestore */,
+				04A11B452ECD8A2E00ECE51C /* Kingfisher */,
 			);
 			productName = RideFuture;
 			productReference = 04A11ABB2ECD350E00ECE51C /* RideFuture.app */;
@@ -94,6 +120,10 @@
 			);
 			mainGroup = 04A11AB22ECD350E00ECE51C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				04A11AD12ECD35E100ECE51C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				04A11B442ECD8A2E00ECE51C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 04A11ABC2ECD350E00ECE51C /* Products */;
 			projectDirPath = "";
@@ -109,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A11AFA2ECD428500ECE51C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +285,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Permisos de usuario";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Permisos de usuario";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -264,7 +297,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
@@ -298,6 +331,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Permisos de usuario";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Permisos de usuario";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -308,7 +343,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
@@ -351,6 +386,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04A11AD12ECD35E100ECE51C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+		04A11B442ECD8A2E00ECE51C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04A11AD22ECD35E100ECE51C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A11AD12ECD35E100ECE51C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		04A11AE02ECD3B4C00ECE51C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A11AD12ECD35E100ECE51C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		04A11AE22ECD3B6400ECE51C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A11AD12ECD35E100ECE51C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		04A11B452ECD8A2E00ECE51C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A11B442ECD8A2E00ECE51C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04A11AB32ECD350E00ECE51C /* Project object */;
 }
